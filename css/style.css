@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --cor-vermelha: #ff3131;
+  --cor-preta: black;
+  --cor-branca: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#conteudo-principal {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+}
+
+/* Estilizando o Menu Lateral */
+#menu-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+  max-width: 300px;
+  padding: 50px 10px 50px 0px;
+  border-right: 2px solid var(--cor-vermelha);
+  color: var(--cor-vermelha);
+  font-family: "Open Sans", sans-serif;
+}
+
+#logo-doe-vida {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#logo-doe-vida,
+#menu-lateral > h1 {
+  font-size: 2rem;
+  margin: 0px auto;
+}
+
+#nav-menu-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+.btn-menu-lateral {
+  padding: 10px 0;
+}
+
+.link-menu-lateral {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cor-vermelha);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.icon-menu-lateral {
+  height: 30px;
+}
+/* Fim do Menu Lateral */
+
+/* Estilizando o Menu Superior */
+#div-tela-inical {
+  width: 100%;
+}
+
+#cabecalho-tela-inicial {
+  width: 100%;
+  height: 100px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--cor-vermelha);
+  font-family: "Open Sans", sans-serif;
+  color: var(--cor-vermelha);
+}
+
+#btn-perfil-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 70px;
+  padding: 0px 30px;
+  border: 2px solid var(--cor-vermelha);
+  border-radius: 40px;
+  text-decoration: none;
+  color: var(--cor-preta);
+}
+
+.dados-usuario {
+  color: var(--cor-vermelha);
+  font-size: 0.8rem;
+}
+
+.icon-menu-superior > img {
+  height: 30px;
+}
+/* Fim do Menu Superior */
+
+/* Estilizando Carrossel de Campanhas */
+#carrossel-campanhas {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--cor-vermelha);
+  margin-top: 4rem;
+  font-size: 35px;
+}
+
+#picture_input {
+  display: none;
+}
+
+.upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 2rem;
+}
+
+.picture {
+  width: 700px;
+  aspect-ratio: 16 / 9;
+  background: #DDD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentColor;
+  cursor: pointer;
+  border-radius: 2rem;
+  overflow: hidden; /* Garante que a imagem não extrapole os limites do contêiner */
+  position: relative;
+}
+
+.picture:hover {
+  color: var(--cor-vermelha);
+  background: #ccc;
+}
+
+.picture_img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Faz com que a imagem se ajuste ao contêiner */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.default_image {
+  width: 50px; /* Tamanho fixo para o ícone de upload */
+  height: 50px; /* Tamanho fixo para o ícone de upload */
+  object-fit: contain; /* Mantém a proporção do ícone */
+}
+
+.uploaded_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+.dados_campanha {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espaçamento entre os grupos de formulário */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 9px; /* Espaçamento entre o ícone e os inputs */
+position: relative;
+top: 6rem;
+margin-left: 39rem;
+}
+
+.form-group label {
+  display: block;
+  width: 11%;
+  float:left;
+  font-size: 20px;
+  color: var(--cor-vermelha);
+  font-weight: bold;
+
+}
+#titulo{
+  width: 600px;
+}
+
+
+.form-group input {
+  padding: 10px;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px; /* Ajuste a largura conforme necessário */
+
+}
+
+.icon_campanha {
+  width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+#form-tipo{
+  display: block;
+  width: 6.5REM;
+  position: relative;
+  margin-left: 94rem;
+  top: -9rem;
+  font-size: 40PX;
+  font-weight: bolder;
+  color: var(--cor-vermelha);
+}
+.submit-button {
+  background-color: var(--cor-vermelha);
+  border: none;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  top: 4rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #ccc;
+
+}
+
+@media (max-width: 1500px) {
+  .form-group {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .picture {
+    width: 90%;
+    max-width: none;
+  }
+
+  .form-group {
+    margin-left: 0;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .icon_campanha {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .picture {
+    width: 100%;
+  }
+
+  .form-group input {
+    width: 100%;
+  }
+
+  #form-tipo {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .submit-button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .form-group input {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .picture {
+    width: 100%;
+    aspect-ratio: auto;
+  }
+
+  .icon_campanha {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
