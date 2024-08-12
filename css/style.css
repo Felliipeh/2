@@ -128,7 +128,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   color: var(--cor-vermelha);
-  margin-top: 4rem;
+  margin-top: 1rem;
   font-size: 35px;
 }
 
@@ -141,7 +141,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 2rem;
+  top: 1rem;
 }
 
 .picture {
@@ -155,7 +155,7 @@ body {
   border: 2px dashed currentColor;
   cursor: pointer;
   border-radius: 2rem;
-  overflow: hidden; /* Garante que a imagem não extrapole os limites do contêiner */
+  overflow: hidden; 
   position: relative;
 }
 
@@ -191,21 +191,21 @@ body {
 .dados_campanha {
   display: flex;
   flex-direction: column;
-  gap: 25px; /* Espaçamento entre os grupos de formulário */
+  gap: 25px; /* Espaçamento entre os grupos do formulário */
 }
 
 .form-group {
   display: flex;
   align-items: center;
-  gap: 9px; /* Espaçamento entre o ícone e os inputs */
+  gap: 5px; /* Espaçamento entre o ícones e os inputs */
 position: relative;
-top: 6rem;
-margin-left: 39rem;
+top: 4rem;
+margin-left: 15rem;
 }
 
 .form-group label {
   display: block;
-  width: 11%;
+  width: 14%;
   float:left;
   font-size: 20px;
   color: var(--cor-vermelha);
@@ -222,20 +222,20 @@ margin-left: 39rem;
   font-size: 1.3rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 400px; /* Ajuste a largura conforme necessário */
+  width: 400px;
 
 }
 
 .icon_campanha {
-  width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
-  height: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+  width: 24px; 
+  height: 24px; 
 }
 #form-tipo{
   display: block;
-  width: 6.5REM;
+  width: 6.9REM;
   position: relative;
-  margin-left: 94rem;
-  top: -9rem;
+  margin-left: 67rem;
+  top: -11rem;
   font-size: 40PX;
   font-weight: bolder;
   color: var(--cor-vermelha);
@@ -249,7 +249,7 @@ margin-left: 39rem;
   align-items: center;
   margin: auto;
   position: relative;
-  top: 4rem;
+  top: 3rem;
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 2rem;
